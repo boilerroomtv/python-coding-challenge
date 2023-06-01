@@ -1,35 +1,31 @@
 ## Technical Test Brief
 
-### Task 1:
+### Insert users from a CSV into a database table
 
-Write a program that performs the following tasks:
+Update `main.py` so that it does the following:
 
-1. Handle a CSV file:
-   - Read the CSV file, which can be of any length.
+1. Parse a CSV file of users:
+   - Read the CSV file, which can be of any number of rows up to 100000.
    - Validate all cells in the CSV file for errors.
+   - See `example.csv` for the CSV format.
 
-2. Find or insert a user into a database:
-   - Connect to a database and perform operations to find or insert a user.
+2. Find or insert users from CSV into an SQLite database:
+   - Setup the database.
+   - Connect to a database and perform operations to update or insert a user.
+   - Dedupe on email address.
    - Each user must have a unique UUID using a salt/hash.
 
 3. Post user data to an external API:
-   - Send user data to an external API.
+   - Post all imported users to fake endpoint.
+   - Use endpoint `https://jsonplaceholder.typicode.com/posts`.
+   - Endpoint body format should be `{users: [{email, uuid, tags: ['tag1', 'tag2']}]}`
    - Note that the API can only accept chunks of 75 users at a time.
 
-Additional requirements:
+Requirements:
+- Your program should be command line only.
 - The program should be optimized for performance.
 - You should write tests to accompany your program.
-
-### Task 2:
-
-In addition to completing Task 1, provide suggestions for improving the program and handling the limitation of the external API that only accepts 75 users at a time. Consider the following points:
-
-1. Handling the 75 user chunk limitation:
-   - Describe how you would efficiently split the user data into chunks of 75 users and send them to the API.
-   - Explain any strategies or algorithms you would employ to handle this limitation effectively.
-
-2. Other systems or tools:
-   - Identify any additional systems, tools, or technologies you would use to enhance the program's performance or functionality.
-   - Justify your choices and briefly explain how these systems or tools would complement the existing solution.
-
-   Note: Provide clear, concise answers and focus on the technical aspects of the program, including scalability, error handling, and integration with external systems.
+- Setup your test with any required dependencies.
+- Make sensible assumptions on validation.
+- The program should have clear logs.
+- Write instructions on how to run your program in markdown.
