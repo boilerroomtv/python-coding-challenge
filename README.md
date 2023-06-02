@@ -1,6 +1,8 @@
-## Boiler Room Python Coding Challenge
+# Boiler Room Python Coding Challenge
 
-### Insert users from a CSV into a database table
+Create a script that can import users from a CSV into a database table.
+
+## Challenge
 
 Update `main.py` so that it does the following:
 
@@ -21,7 +23,7 @@ Update `main.py` so that it does the following:
    - Endpoint body format should be `{users: [{email, uuid, tags: ['tag1', 'tag2']}]}`
    - Note that the API can only accept chunks of 75 users at a time.
 
-Requirements:
+## Requirements
 - Your program should be command line only.
 - The program should be optimized for performance.
 - You should write tests to accompany your program.
@@ -29,3 +31,7 @@ Requirements:
 - Make sensible assumptions on validation.
 - The program should have clear logs.
 - Write instructions on how to run your program in markdown.
+
+## Delivery
+- this folder is a git repo, commit your changes to it locally before zipping it up and sending to us (we would like to see your working)
+- make a note of any assumptions you've made during the build
