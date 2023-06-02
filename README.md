@@ -8,7 +8,9 @@ Update `main.py` so that it does the following:
 
 1. Parse a CSV file of users:
    - Read the CSV file, which can be of any number of rows up to 100000.
-   - Validate all cells in the CSV file for errors.
+   - Validate fields for import:
+      -  Email addresses must be valid
+      -  Tags must be alphanumeric with hyphens
    - See `example.csv` for the CSV format.
 
 2. Find or insert users from CSV into an SQLite database:
