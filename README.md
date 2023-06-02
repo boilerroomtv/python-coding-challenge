@@ -1,4 +1,4 @@
-## Technical Test Brief
+## Boiler Room Python Coding Challenge
 
 ### Insert users from a CSV into a database table
 
