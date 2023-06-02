@@ -27,7 +27,7 @@ Update `main.py` so that it does the following:
 - Your program should be command line only.
 - The program should be optimized for performance.
 - You should write tests to accompany your program.
-- Setup your test with any required dependencies.
+- Setup your program with dependencies.
 - Make sensible assumptions on validation.
 - The program should have clear logs.
 - Write instructions on how to run your program in markdown.
